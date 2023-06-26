@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  </head>
+
+  <body>
+    <form action="" onsubmit="event.preventDefault(); submitform()">
+      <label for="amount">Amount</label>
+      <input type="number" id="amount" />
+
+      <label for="description">Description</label>
+      <input type="text" id="description" />
+
+      <label for="category">Choose a category</label>
+      <select class="form-select" id="category">
+        <option selected>Select an option</option>
+        <option value="movie">Movie</option>
+        <option value="sutta">Sutta</option>
+        <option value="oldmonk">Old Monk</option>
+      </select>
+
+      <button type="submit" class="form-control my-4">Add Expense</button>
+    </form>
+
+    <div id="expenses"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
